@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🔐 Password Strength Checker</h1>
+        <p class="subtitle">Create a strong and secure password!</p>
+
+        <!-- Password Input -->
+        <div class="input-group">
+            <label for="password">Enter Password</label>
+
+            <div class="password-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                >
+
+                <button type="button" id="togglePassword">
+                    Show
+                </button>
+            </div>
+        </div>
+
+        <!-- Strength Message -->
+        <div id="strengthText">
+            Password strength will appear here
+        </div>
+
+        <!-- Strength Indicator -->
+        <div class="strength-bar">
+            <div id="strengthIndicator"></div>
+        </div>
+
+        <!-- Password Requirements -->
+        <div class="requirements">
+
+            <h3>Password Requirements</h3>
+
+            <ul>
+                <li id="length">✔️At least 8 characters</li>
+                <li id="uppercase">✔️One uppercase letter (A-Z)</li>
+                <li id="lowercase">✔️One lowercase letter (a-z)</li>
+                <li id="number">✔️ One number (0-9)</li>
+                <li id="special"> ✔️One special character (@, #, !)</li>
+            </ul>
+
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Re-enter your password"
+            >
+        </div>
+
+        <!-- Password Match Message -->
+        <p id="matchMessage"></p>
+
+        <!-- Reset Button -->
+        <button type="button" id="resetBtn" class="reset-btn">
+            Reset
+        </button>
+
+        <p class="footer">Made with ❤️ using HTML, CSS & JavaScript</p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
